@@ -14,9 +14,9 @@ Adicione regras nos locais indicados do arquivo styles.css para fazer uma visual
 ![ex7 p2](./.github/assets/ex-07-p2.png)
 ![ex7 p2](./.github/assets/ex-07-p3.png)
 
-- A visualização de lista deve ter apenas um item por linha
-- A visualização de cards deve ter 3 cards por linha de mesmo tamanho
-- A visualização de destaques deve ter o primeiro e sexto elementos com tamanho maior até 4 vezes maior em relação a cards da mesma linha
+- A visualização de lista deve ter apenas um item por linha e os itens devem ter espaçamento vertical de 2rem
+- A visualização de cards deve ter 3 cards por linha de mesmo tamanho e os itens devem ter espaçamento horizontal e vertical de 5rem
+- A visualização de destaques deve ter o primeiro e sexto elementos com tamanho maior até 4 vezes maior em relação a cards da mesma linha e os itens devem ter espaçamento horizontal e vertical de 5rem
 
 ## Exercício 8
 Faça o layout mobile para a página da loja do exercício 7 da seguinte forma:
