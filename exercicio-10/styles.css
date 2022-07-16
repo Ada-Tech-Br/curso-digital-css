@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  color: #555;
+}
+
+body, button, input {
+  font-family: 'Roboto', sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+header img {
+  max-height: 75vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.action-button-div {
+  text-align: center;
+}
+
+.action-button-div button {
+  border-radius: .4rem;
+  padding: .6rem 12rem;
+  font-size: 2.4rem;
+  color: #fff;
+  border: none;
+  background-color: #00bbf9;
+}
+
+.why-travel {
+  min-height: 25vh;
+}
+
+.why-travel h2 {
+  margin: 2.4rem 0;
+  font-size: 7.8rem;
+  color: #333;
+  text-align: center;
+}
+
+.description {
+  padding: 1.5rem;
+  font-size: 3.2rem;
+
+  display: flex;
+  gap: 0 1.5rem;
+}

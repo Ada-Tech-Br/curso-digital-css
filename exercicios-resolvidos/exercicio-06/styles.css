@@ -1,0 +1,108 @@
+:root {
+  --tag-color-1: #FE5F55;
+  --tag-color-2: #3DD6D0;
+  --tag-color-3: #7765E3;
+  --tag-color-4: #BDD358;
+  --tag-color-5: #89A6FB;
+  --separator-color: #edf2f4;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+.container {
+  max-width: 80rem;
+  margin: auto;
+  border-radius: 1.6rem;
+  background-color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.6rem;
+  padding: 3rem;
+  background-color: var(--tag-color-5);
+}
+
+h1 {
+  padding: 2.4rem 0;
+  text-align: center;
+  font-weight: 600;
+}
+
+h1 span {
+  font-weight: 300;
+}
+
+h1 strong {
+  color: #89A6FB;
+  font-weight: 500;
+}
+
+.subjects {
+  padding: 2rem 4.2rem;
+}
+
+.subjects hr {
+  height: 1px;
+  background-color: var(--separator-color);
+  border: none;
+}
+
+.subjects h2 {
+  color: white;
+  display: inline-flex;
+  border-radius: .4rem;
+  padding: .4rem 1.2rem;
+  margin-bottom: 2rem;
+
+  font-weight: 600;
+
+  position: sticky;
+  top: .5rem;
+
+}
+
+.subjects li:nth-child(5n + 1) h2 {
+  background-color: var(--tag-color-1);
+}
+
+.subjects li:nth-child(5n + 2) h2 {
+  background-color: var(--tag-color-2);
+}
+
+.subjects li:nth-child(5n + 3) h2 {
+  background-color: var(--tag-color-3);
+}
+
+.subjects li:nth-child(5n + 4) h2 {
+  background-color: var(--tag-color-4);
+}
+
+.subjects li:nth-child(5n + 5) h2 {
+  background-color: var(--tag-color-5);
+}
+
+.topics {
+  padding: 2rem 2rem 4rem;
+}
+
+.topics li {
+  padding: 1rem 2rem;
+  border-radius: .4rem;
+}
+
+.topics li:nth-child(2n + 1) {
+  background-color: var(--separator-color);
+}

@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+h1 {
+  font-size: 6.4rem;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: #222;
+  background-color: #7145C1;
+  color: #ccc;
+  font-family: 'Poppins', sans-serif;
+}
+
+time {
+  font-size: 12.2rem;
+}
+
+.react-card {
+  min-height: 100vh;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  gap: 1.5rem 5rem;
+
+  /* resposta */
+  grid-template-areas: 
+  ". . . . ."
+  ". about about about ."
+  ". logo year high1 high1"
+  ". logo year high2 high2"
+  ". logo stats stats stats"
+  ". logo high3 high3 ."
+  ". . . . ."
+  ;
+}
+
+.about {
+  grid-area: about;
+}
+
+.image-container {
+  grid-area: logo;
+  padding: 3.6rem;
+  border-radius: .8rem;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.year {
+  grid-area: year;
+  color: #61dafb;
+}
+
+.stats {
+  grid-area: stats;
+  display: flex;
+  align-items: center;
+  gap: 0 1.2rem;
+}
+
+.highlight.one {
+  grid-area: high1;
+}
+
+.highlight.two {
+  grid-area: high2;
+}
+
+.highlight.three {
+  grid-area: high3;
+}
+
+.image-container img {
+  width: 30rem;
+}
+
+.company-logo {
+  width: 9rem;
+  height: 9rem;
+  border-radius: 50%;
+}
+
+.stats strong {
+  color: #61dafb;
+}
+
+.star-count {
+  display: flex;
+  align-items: center;
+}
+
+article svg {
+  font-size: 100px;
+  fill: yellow;
+}

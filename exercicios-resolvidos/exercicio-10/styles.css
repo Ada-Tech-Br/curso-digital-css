@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  color: #555;
+}
+
+body, button, input {
+  font-family: 'Roboto', sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+header img {
+  max-height: 75vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+main {
+  padding: 0 3rem;
+}
+
+.find-out {
+  min-height: 25vh;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.find-out h2 {
+  margin: 2.4rem 0;
+  font-size: 3.6rem;
+  color: #333;
+  text-align: center;
+}
+
+.find-out > i {
+  font-size: 5rem;
+}
+
+.description {
+  font-size: 3.2rem;
+  margin: 5rem 0 12rem;
+
+  display: flex;
+  gap: 0 1.5rem;
+}
+
+.action-button-div {
+  text-align: center;
+  margin: 0rem 0 4.5rem;
+}
+
+.action-button-div button {
+  border-radius: .4rem;
+  padding: 1rem 8rem;
+  font-size: 3.6rem;
+  color: #fff;
+  border: none;
+  background-color: #00bbf9;
+}
+
+/* resposta */
+header {
+  position: relative;
+}
+
+header::before {
+  content: '';
+  height: 100%;
+  width: 100%;
+
+  background-color: #000;
+  opacity: .6;
+  z-index: 1;
+
+  position: absolute;
+}
+
+header::after {
+  content: 'O mundo como você nunca viu';
+  color: #fff;
+  width: 100%;
+  text-align: left;
+  max-width: 30rem;
+
+  font-size: 8rem;
+  font-weight: 700;
+  line-height: 7rem;
+
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 3rem;
+
+  transform: translate(0, -50%);
+}
+
+/* opção 1 */
+.find-out > i {
+  animation: slide 1s ease-in-out infinite alternate;
+  transform: translateY(0);
+}
+
+@keyframes slide {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(.5rem);
+  }
+}
+
+/* opção 2 */
+.find-out > i {
+  animation: slide 2s ease-in-out infinite;
+  transform: translateY(0);
+}
+
+@keyframes slide {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(.5rem);
+  }
+
+  100% {
+    transform: translateY(0rem);
+  }
+}

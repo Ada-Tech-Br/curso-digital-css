@@ -1,0 +1,35 @@
+:root {
+  --tag-color-1: #FE5F55;
+  --tag-color-2: #3DD6D0;
+  --tag-color-3: #7765E3;
+  --tag-color-4: #BDD358;
+  --tag-color-5: #89A6FB;
+  --separator-color: #edf2f4;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+.container {
+  max-width: 80rem;
+  margin: auto;
+  border-radius: 1.6rem;
+  background-color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.6rem;
+  padding: 3rem;
+}
