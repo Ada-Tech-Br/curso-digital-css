@@ -1,7 +1,10 @@
 # Exercícios de Fixação do Curso Digital de CSS
 
 ## Exercício 6
-Estilize a página de um sumário de acordo com o modelo abaixo. Além disso, garanta que a tecnologia numerada fique fixa ao fazer scroll até encontrar a próxima (dica: use display sticky).
+Estilize a página de um sumário para se assemelhar ao modelo abaixo. Atente para os requistos principais:
+- As cores de fundo dos tópicos devem se alternar entre a cor definida por --separator-color e #fff
+- Utilize variáveis do CSS para colorir as tags de tecnologias e garanta que o 1º e 6º elementos tenham a cor definida na --tag-color-1, 2º e 7º com a --tag-color-2, 3º e 8º com a --tag-color-3 e assim por diante
+- Garanta que a tag de tecnologia numerada fique fixa ao fazer scroll até encontrar a próxima (dica: use display sticky).
 
 ![ex6 p1](./.github/assets/ex-06-p1.png)
 ![ex6 p2](./.github/assets/ex-06-p2.png)
