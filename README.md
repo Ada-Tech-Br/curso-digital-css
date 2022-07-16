@@ -1,0 +1,38 @@
+# Exercícios de Fixação do Curso Digital de CSS
+
+## Exercício 6
+Estilize a página de um sumário de acordo com o modelo abaixo. Além disso, garanta que a tecnologia numerada fique fixa ao fazer scroll até encontrar a próxima (dica: use display sticky).
+
+![ex6 p1](./.github/assets/ex-06-p1.png)
+![ex6 p2](./.github/assets/ex-06-p2.png)
+![ex6 p3](./.github/assets/ex-06-p3.png)
+
+## Exercício 7
+Adicione regras nos locais indicados do arquivo styles.css para fazer uma visualização em lista, cards ou destaques segundo as imagens abaixo:
+
+![ex7 p2](./.github/assets/ex-07-p1.png)
+![ex7 p2](./.github/assets/ex-07-p2.png)
+![ex7 p2](./.github/assets/ex-07-p3.png)
+
+- A visualização de lista deve ter apenas um item por linha
+- A visualização de cards deve ter 3 cards por linha de mesmo tamanho
+- A visualização de destaques deve ter o primeiro e sexto elementos com tamanho maior até 4 vezes maior em relação a cards da mesma linha
+
+## Exercício 8
+Faça o layout mobile para a página da loja do exercício 7 da seguinte forma:
+- Permita que apenas sejam selecionados os modos de visualização de cards e lista
+- Na visão de cards devem ter 2 cards por linha
+- Garanta que os botões para troca de visualização apareçam fixos no topo da tela com position fixed ou sticky 
+
+## Exercício 9
+Adicione apenas uma propriedade grid-template-areas na classe react-card sem fazer mais nenhuma modificação para deixar o layout similar à imagem abaixo:
+
+![ex9](./.github/assets/ex-09.png)
+
+## Exercício 10
+Faça um *overlay* para esmaecer a imagem de capa abaixo, utilizando apenas 2 pseudoelementos para isso (::after e ::before), da seguinte forma:
+- Overlay no ::before com fundo #000, opacidade 0.6 e cobrindo toda a imagem de capa
+- Texto no ::after de cor #fff sem ser afetado pelo overlay, com conteúdo "O mundo como você nunca viu", largura máxima de 30rem, tamanho de 8rem, altura de linha 7rem e posicionado à 3rem da borda esquerda sobre o overlay e imagem.
+- Faça uma animação para que o ícone da seta se desloque para baixo em 0.5rem e retorne para a posição inicial após 2 segundos 
+
+![ex10](./.github/assets/ex-10.png)
