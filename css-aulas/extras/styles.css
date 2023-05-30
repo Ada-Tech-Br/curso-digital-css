@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'times new roman';
+    font-size: 1.8rem;
+}
+
+main {
+    padding: 1.5rem;
+}
+
+table, td, th {
+    border: 1px solid black;
+}
+
+table tr:first-child {
+    background-color: steelblue;
+    color: #fff;
+}
+
+table tr:nth-child(2n + 3) {
+    background-color: #AAA;
+}
+
+table {
+    font-size: 2.4rem;
+    border-collapse: separate;
+}
+
+h1 {
+    color: blueviolet;
+    font-weight: 900;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 4.6rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', arial, cursive;
+}
+
+h2 {
+    font-size: 2.4rem;
+}
+
+.novo-em {
+    font-size: 300%;
+}
+
+p {
+    font-size: 1.8rem;
+    text-align: justify;
+    text-indent: 90px;
+}
+
+a {
+    font-size: 2.4rem;
+    color: red;
+}
+
+a:visited {
+    color: darkgreen;
+}
+
+a:hover {
+    color: coral;
+}
+
+.bg {
+    height: 20vh;
+    width: 100%;
+    background-color: #555;
+    background-image: url('https://images.unsplash.com/photo-1492138786289-d35ea832da43?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-attachment: fixed; */
+}
+
+ul, ol {
+    padding-left: 3.2rem;
+}
+
+ul {
+    list-style: square;
+}
+
+nav.menu {
+    position: fixed;
+    background-color: steelblue;
+    width: 100%;
+    height: 7rem;
+    z-index: 1;
+}
+
+.contact-list {
+    position: relative;
+}
+
+.contact-list h2 {
+    top: 7rem;
+    position: sticky;
+    background-color: limegreen;
+}
+
+.boxes {
+    margin: 1.5rem 0;
+    position: relative;
+
+    display: none;
+    /* display: flex; */
+    flex-wrap: wrap;
+    gap: 1.5rem;
+
+}
+
+.box + span {
+    display: none;
+}
+
+.box {
+    flex: 30%;
+    height: 10rem;
+    width: 20rem;
+    padding: 1.5rem;
+    background-color: blue;
+    color: #fff;
+    border: 10px solid red;
+    border-radius: 0.4rem;
+}
+
+.box p {
+    font-size: 5rem;
+}
+
+.box:nth-child(1) {
+    float: none;
+}
+
+.box + span {
+    clear: both;
+}
+
+/* .box:nth-child(1) {
+    position: absolute;
+    top: 30px;
+    left: 100px;
+} */
+
+/* .box:nth-child(2) {
+    position: fixed;
+    top: 15px;
+    left: 30px;
+} */
+
+.box:nth-child(n + 2) {
+    /* display: none; */
+}
+
+.box:nth-child(1), .box:nth-child(2) {
+}
+
+.box:nth-child(3) {
+}
+
+.boxes p {
+    display: inline;
+}
+
+img {
+    clear: both;
+    height: 10rem;
+    width: 14rem;
+    object-fit: cover;
+}
+
+a {
+    background: steelblue;
+    color: #fff;
+    border: none;
+    font-size: 2.8rem;
+    padding: 0.6rem 2.4rem;
+    cursor: pointer;
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    text-decoration: none;
+    transition: all .2s ease-in-out, background-color 1s ease-in-out;
+
+    display: block;
+}
+
+[data-anchor="products"] {
+    /* opacity: 0; */
+    /* display: none; */
+    /* visibility: hidden; */
+}
+
+[data-anchor="products"]:hover {
+    background-color: aqua;
+    color: #fff;
+    transform: scale(1.2);
+}
+
+[data-anchor="team"] {
+    margin-top: 2rem;
+    animation: pulse 2s infinite;
+    /* animation-fill-mode: forwards; */
+    animation-direction: alternate;
+    transform: scale(1);
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1); 
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1.35);
+        opacity: .6;
+    }
+
+    /* 100% {
+        transform: scale(1); 
+        opacity: 1;
+    } */
+}
+
+.spinner-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.fa-spinner {
+    margin-top: 3rem;
+    margin: 4rem;
+    font-size: 5rem;
+    color: blueviolet;
+    animation: load 1s infinite;
+}
+
+@keyframes load {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+#companies-table {
+    /* display: none; */
+}
+
+[data-company] {
+    background-color: aqua;
+}
+
+@media screen and (min-width: 1000px) {
+    .bg {
+        height: 50vh;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 999px) {
+    .bg {
+        height: 80vh;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    /* table {
+        display: none;
+    }
+    h1 {
+        color: red;
+    } */
+}
+
+@media print {
+    .bg {
+        display: none;
+    }
+}

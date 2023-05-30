@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, input, button, a {
+    font-family: 'Roboto', sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.8rem;
+}
+
+.input-group {
+    display: flex;
+    gap: 0 1rem;
+}
+
+input {
+    padding: 0.6rem 0.6rem;
+    border: 1px solid #333;
+    border-radius: 0.4rem;
+    flex: 1;
+}
+
+label {
+    font-size: 1.4rem;
+    min-width: 10rem;
+}
+
+aside {
+    padding: 3rem 1.5rem;
+    border: 1px solid #AAA;
+    border-radius: 0.4rem;
+    /* max-width: 480px; */
+    /* min-height: 400px; */
+
+    display: flex;
+    gap: 1.5rem 0;
+    flex-direction: column;
+    text-align: center;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+.fa-solid {
+    color:#52b69a;
+    font-size: 10rem;
+}
+
+button {
+    background-color:#52b69a;
+    border: none;
+    color: #fff;
+    padding: 0.6rem 0;
+    border-radius: 0.4rem;
+    font-size: 1.8rem;
+}
+
+footer {
+    background-color: #52b69a;
+    padding: 1.5rem;
+}
+
+footer a {
+    color: #fff;
+}
+
+footer ul {
+    list-style: none;
+    color: #fff;
+    max-height: 1rem;
+
+    display: flex;
+    gap: 1.4rem;
+}
+
+.page-content h1 {
+    font-size: 5.6rem;
+}
+
+.page-content h1 p + p {
+    color: #52b69a;
+}
+
+.page-content {
+    height: 100vh;
+    display: grid;
+}
+
+main {
+    grid-area: title;
+}
+
+aside {
+    grid-area: login;
+}
+
+footer {
+    grid-area: footer
+}
+
+@media screen and (min-width: 1024px) {
+    .page-content {
+        display: grid;
+        gap: 10rem 0;
+
+        grid-template-areas: 
+            ". . . . ."
+            ". title login login ."
+            ". title login login ."
+            ". title login login ."
+            ". . . . ."
+            "footer footer footer footer footer"
+        ;
+    }
+}

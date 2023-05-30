@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'arial';
+    font-size: 1.8rem;
+}
+
+h1 {
+    color: blueviolet;
+    font-weight: 900;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 4.6rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', arial, cursive;
+}
+
+h2 {
+    font-size: 2.4rem;
+}
+
+p {
+    font-size: 1.8rem;
+    text-align: justify;
+}
+
+.box {
+    /* min-height: 10rem; */
+    /* min-width: 20rem; */
+    padding: 1.5rem;
+    border: 10px solid red;
+    border-radius: 0.4rem;
+    background-color: blue;
+    color: #fff;
+    font-size: 4rem;
+
+    flex: 1;
+
+    display: flex;
+    gap: 0 2rem;
+    justify-content: center;
+    align-content: center;
+}
+
+.box p, button {
+    font-size: 4rem;
+}
+
+.boxes {
+    height: calc(100vh);
+    position: relative;
+
+    display: grid;
+    justify-content: flex-start;
+    /* row-gap: 1rem; */
+    /* column-gap: 5rem; */
+    gap: 1rem 5rem;
+
+    /* grid-template-columns: 3fr 1fr 1fr 1fr; */
+    grid-template-columns: 3fr repeat(2, 1fr);
+    /* grid-template-rows: 2fr; */
+}
